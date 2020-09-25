@@ -1,1 +1,95 @@
-<h1> test </h1>
+<!doctype html>
+<html>
+	
+	<style>
+		
+		body, html {
+		  height: 100%;
+		  margin: 0;
+		}
+
+		.bg {
+		  background-image: url("twikshi_background.jpg");
+		  height: 100%; 
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		}
+		
+		.centered {
+			position: absolute;
+			top: 20%;
+			left: 50%;
+			color: #ffbb33;
+			font-family: Comfortaa;
+			font-weight: bold;
+			font-size: 80px;
+  			src: url(Comfortaa-VariableFont_wght.ttf);
+			transform: translate(-50%, -50%);
+		}
+		.box{
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			position: absolute;
+		}
+		
+		.image-container{
+			display : flex;
+			justify-content : center;
+		}
+		
+	</style>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" property="og:description" content="Timing ausschlaggebend ist über Sieg oder Niederlage.">
+		<meta content="website" property="og:type">
+		<meta property="og:title" content="twikshi">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<title>twikshi</title>
+	</head>
+
+	<body>
+	<div class="bg">
+	  <div class="centered">twikshi</div>
+<div class="box"> 
+	  <div class="image-container" style="s:100%">
+			
+		<a href="https://play.google.com/store/apps/details?id=com.twikshi.twikshi">
+          <img src="twikshi_google_play.png" style="margin-right:-1%" alt="Download from Google Play btn"/>
+        </a>
+			
+		<a href="https://apps.apple.com/de/app/twikshi/id1528995492">
+          <img src="twikshi_app_store.png" style="margin-left:1%" alt="Download from Apple App Store btn"/>
+        </a>	
+		
+		</div>
+	
+		</div>
+	
+	</div>
+
+<script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-analytics.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyCIApK2YEfrhxWlX-sirPDmFF8K7uU2vG4",
+    authDomain: "twikshi-85270.firebaseapp.com",
+    databaseURL: "https://twikshi-85270.firebaseio.com",
+    projectId: "twikshi-85270",
+    storageBucket: "twikshi-85270.appspot.com",
+    messagingSenderId: "754645675905",
+    appId: "1:754645675905:web:a48bd179419f59c5728280",
+    measurementId: "G-TVFBKV2J2T"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+		
+	</body>
+
+</html>
